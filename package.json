@@ -1,0 +1,25 @@
+{
+  "name": "SherlockZoo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mateuszdzidaweb/SherlockZoo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mateuszdzidaweb/SherlockZoo/issues"
+  },
+  "homepage": "https://github.com/Mateuszdzidaweb/SherlockZoo#readme",
+  "dependencies": {
+    "postcss-import": "^14.0.0",
+    "tailwindcss": "^2.0.2"
+  }
+}

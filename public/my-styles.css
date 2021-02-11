@@ -32,25 +32,25 @@ h1{
 
 
 .carousel-bgimg1{
-    background-image: url(/public/resources/carouse-img-1.jpg);
+    /* background-image: url(/carouse-img-1.jpg); */
     background-position: center center;
     background-repeat: no-repeat;
     opacity: 0.9;
 }
 
 .carousel-bgimg2{
-    background-image: url(/public/resources/carouse-image8.jpg);
+    /* background-image: url(/public/resources/carouse-image8.jpg); */
     background-position: center center;
     background-repeat: no-repeat;
     opacity: 0.8;
 }
 
 .carousel-bgimg3{
-    background-image: url(/public/resources/carouse-image6.jpg);
+    /* background-image: url(/public/resources/carouse-image6.jpg); */
     background-position: center center;
     background-repeat: no-repeat;
     opacity: 0.9;
-    filter: blur(0.5px);
+    /* filter: blur(0.5px); */
 
 }
 
@@ -203,6 +203,11 @@ svg{
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    .lion-max-height{
+        max-height: 180px;
+        max-width: 200px;
     }
     
 }

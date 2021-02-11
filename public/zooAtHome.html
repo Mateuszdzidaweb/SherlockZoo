@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/styles.css">
-    <link rel="stylesheet" href="/src/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="my-styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -85,21 +85,21 @@ top: 10px;">
         <!-- End-Nav -->
         <!-- Banner -->
         <static-carousel-banner title="Bring Zoo to your Home"
-            body="Nulla vitae elit libero, a pharetra augue mollis interdum." style="background-image: url(/public/resources/zoo-at-home-img.jpg); background-repeat: no-repeat;
+            body="Nulla vitae elit libero, a pharetra augue mollis interdum." style="background-image: url(./resources/zoo-at-home-img.jpg); background-repeat: no-repeat;
             background-size: cover;" class="bg-center">
         </static-carousel-banner>
         <!-- End Banner -->
         <!-- Activity Banner -->
         <div
             class="containerBox h-auto flex flex-row flex-wrap justify-around content-center w-full py-5 float-left bg-green-600">
-            <img class="lg:block w-40 sm: hidden" src="/public/resources/icons/lion-icon.png" style="transform: scaleX(-1);" alt="">
+            <img class="lg:block w-40 sm: hidden" src="./resources/icons/lion-icon.png" style="transform: scaleX(-1);" alt="">
             <content-box-no-button title="Find great activities and help animals at your garden"
                 class="w-auto h-auto py-2  text-white">
             </content-box-no-button>
             <!-- <div class="center">
                 <img src="/public/resources/icons/pencil-case.png" alt="">
             </div> -->
-            <img class="w-40" src="/public/resources/icons/lion-icon.png" alt="">
+            <img class="w-40 sm:max-h-40 lion-max-height" src="./resources/icons/lion-icon.png" alt="">
         </div>
 
         <!-- End Activity Banner -->
@@ -107,27 +107,27 @@ top: 10px;">
 
 
         <div class="containerBox flex flex-row flex-wrap justify-center w-full lg:pt-20 sm: pt-5"> 
-            <image-box-with-title style="background-image: url(/public/resources/hedgehog-house.jpg)"
+            <image-box-with-title style="background-image: url(./resources/hedgehog-house.jpg)"
                 title="Build a Hedgehog House">
             </image-box-with-title>
             <image-box-with-title title="Build a Bird House"
-                style="background-image: url(/public/resources/bird-house.jpg)"></image-box-with-title>
+                style="background-image: url(./resources/bird-house.jpg)"></image-box-with-title>
             <image-box-with-title title="Make Butterfly"
-                style="background-image: url(/public/resources/butterfly-img.jpg); "></image-box-with-title>
+                style="background-image: url(./resources/butterfly-img.jpg); "></image-box-with-title>
         </div>
         <div class="containerBox flex flex-row flex-wrap justify-center w-full">
-            <image-box-with-title style="background-image: url(/public/resources/hedgehog-house.jpg)"
+            <image-box-with-title style="background-image: url(./resources/hedgehog-house.jpg)"
                 title="Build a Hedgehog House">
             </image-box-with-title>
             <image-box-with-title title="Build a Bird House"
-                style="background-image: url(/public/resources/bird-house.jpg)"></image-box-with-title>
+                style="background-image: url(./resources/bird-house.jpg)"></image-box-with-title>
             <image-box-with-title title="Make Butterfly"
-                style="background-image: url(/public/resources/butterfly-img.jpg); "></image-box-with-title>
+                style="background-image: url(./resources/butterfly-img.jpg); "></image-box-with-title>
         </div>
         <!-- End What To Buil -->
         <!-- Play Game -->
 
-        <img class="center justify-center relative relative lg:top-40 sm: top-36" src="/public/resources/animals-circle-img.png"
+        <img class="center justify-center relative relative lg:top-40 sm: top-36" src="./resources/animals-circle-img.png"
             alt="">
         <div class="containerBox h-96 flex flex-column flex-wrap justify-around content-center w-full"
             style="background-color: #f3a820;">
@@ -148,7 +148,7 @@ top: 10px;">
 
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="/public/scripts.js/main.js"></script>
+    <script src="scripts.js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
     </script>

@@ -52,7 +52,7 @@ Vue.component('banner-img', {
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <div class="carousel-bgimg1 lg:h-5/6 sm: h-3/6">
+        <div class="carousel-bgimg1 lg:h-5/6 sm: h-3/6" style="background-image: url(./resources/carouse-img-1.jpg)">
         <div class="carousel-caption d-none d-md-block pb-40">
           <h1>{{title1}}</h1>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -60,7 +60,7 @@ Vue.component('banner-img', {
       </div>
       </div>
       <div class="carousel-item">
-      <div class="carousel-bgimg2 lg:h-5/6 sm: h-3/6">
+      <div class="carousel-bgimg2 lg:h-5/6 sm: h-3/6" style="background-image: url(./resources/carouse-image8.jpg)">
         <div class="carousel-caption d-none d-md-block">
         <h1>{{title2}}</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -68,7 +68,7 @@ Vue.component('banner-img', {
         </div>
       </div>
       <div class="carousel-item">
-      <div class="carousel-bgimg3 lg:h-5/6 sm: h-3/6">
+      <div class="carousel-bgimg3 lg:h-5/6 sm: h-3/6" style="background-image: url(./resources/carouse-image6.jpg)">
         <div class="carousel-caption d-none d-md-block">
         <h1>{{title3}}</h1>
           <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -240,23 +240,23 @@ Vue.component('footer-bottom', {
   <div class="footer h-auto w-full flex flex-row flex-wrap justify-center mt-5 pt-10 pb-3  bg-green-600 sm: pt-0">
   <div class="h-auto flex flex-row flex-wrap justify-around content-center w-full  float-left">
       <div class="logo w-48 h-auto">
-      <img src="/public/resources/icons/logo.png" alt=""></div>
+      <img src="./resources/icons/logo.png" alt=""></div>
       <div class="socials lg:w-48 h-auto self-center sm: w-full">
           <h3 class="text-center text-white sm: p-2">Follow Us</h3>
           <div class="socialIcons center" style="width: 150px;">
               <div class="fb p-2 sm:">
                   <span class="material-icons" style="font-size:34px !important">
-                      <img src="/public/resources/icons/facebook.png" alt="">
+                      <img src="./resources/icons/facebook.png" alt="">
                       </span>
               </div>
               <div class="twitter p-2">
                   <span class="material-icons" style="font-size:34px !important">
-                      <img src="/public/resources/icons/instagram.png" alt="">
+                      <img src="./resources/icons/instagram.png" alt="">
                       </span>
               </div>
               <div class="instagram p-2">
                   <span class="material-icons" style="font-size:34px !important">
-                      <img src="/public/resources/icons/twitter.png" alt="">
+                      <img src="./resources/icons/twitter.png" alt="">
                       </span>
               </div>
           </div>

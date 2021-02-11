@@ -2,6 +2,207 @@
 @tailwind components;
 @tailwind utilities;
 
+.font-petite-caps{
+    font-variant-caps: petite-caps;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.center-no-flex{
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
 h1{
     font-size: 32px;
+    /* background-color: rgb(0,0,0); Fallback color */
+    /* background-color: rgba(0,0,0, 0.4); */
+}
+
+
+.nav-link{
+    font-variant-caps: petite-caps;
+}
+
+
+.carousel-bgimg1{
+    background-image: url(/public/resources/carouse-img-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+.carousel-bgimg2{
+    background-image: url(/public/resources/carouse-image8.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+.carousel-bgimg3{
+    background-image: url(/public/resources/carouse-image6.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    filter: blur(0.5px);
+
+}
+
+
+
+
+.carousel-caption{
+    padding-bottom: 15rem !important;
+}
+
+.carousel{
+    background-color: rgb(0,0,0) !important;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    height: 4rem !important;
+    width: 4rem !important;
+}
+
+
+
+.table{
+    width: 70% !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.eventsTitle{
+    /* -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url(/public/resources/panda-animal.jpg);
+    font-weight: 700;
+    -webkit-text-stroke: 0.5px black;  */
+}
+
+.mobileMenu{
+    display: none;
+}
+
+svg{
+    color: white !important;
+}
+
+/* Hovers */
+
+.supportusIMG{
+    transform: scale(0.95) !important;
+    transition: ease-in-out .5s !important;
+}
+
+.supportusIMG:hover{
+    transform: scale(1.05) !important;
+    transition: ease-in-out .5s !important;
+}
+
+.image-box-with-title:hover{
+    filter: brightness(0.7) !important;
+    transition: ease-in-out .5s !important;
+}
+
+.image-box-with-title{
+    filter: brightness(1) !important;
+    transition: ease-in-out .5s !important;
+}
+
+
+
+/* .image-box-with-title:hover{
+    transform: rotate(0deg) !important;
+    transition: ease-in-out .5s !important;
+}
+
+.image-box-with-title{
+    transform: rotate(8deg) !important;
+    transition: ease-in-out .5s !important;
+} */
+
+.active{
+    color: green !important;
+    /* border-bottom: 2px solid green; */
+}
+
+.nav-link:hover{
+    color: green !important;
+    /* border-bottom: 2px solid green; */
+}
+
+
+
+@media (max-width: 640px){
+
+    .nav{
+        display: none !important;
+    }
+
+    .mobileMenu{
+        display: flex;
+        box-shadow: 0 3px 3px rgb(0 0 0 / 40%);
+    }
+
+    .sticky-menu{
+        position: fixed;
+        background: white;
+        z-index: 99;
+        width: 100%;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0, 0.93)!important;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .carousel-bgimg1,.carousel-bgimg2,.carousel-bgimg3{
+        background-size: cover;
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+        height: 2rem !important;
+        width: 2rem !important;
+    }
+
+    .supportusIMG{
+        transform: scale(1) !important;
+        transition: ease-in-out .5s !important;
+    }
+
+    .supportDivs{
+        margin-top: 10rem !important;
+    }
+    
+    .img-box-text{
+        bottom: -9rem !important;
+    }
+
+    .table{
+        width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mobileParallax{
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
 }

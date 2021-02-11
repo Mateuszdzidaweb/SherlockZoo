@@ -1,0 +1,161 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/styles.css">
+    <link rel="stylesheet" href="/src/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Visit</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Mobile Menu -->
+        <div v-if="!showModal" class="mobileMenu sticky-menu sm:w-full h-14 flex flex-row justify-end lg:hidden">
+            <h1 class="text-center center-no-flex mt-2 font-petite-caps" style="    margin-left: 40px !important;
+            width: 100%;">Sherlock Zoo</h1>
+            <span id="show-modal" @click="showModal = true" class="material-icons flex self-center"
+                style="font-size:2.5rem">
+                menu
+            </span>
+
+        </div>
+
+        <div v-if="showModal" class="overlay">
+            <span class="material-icons right-3 fixed z-1 text-white" id="show-modal" @click="showModal = false" style="font-size: 2.5rem;
+        top: 10px;">
+                clear
+            </span>
+            <div class="flex flex-column items-center list-none h-3/4 place-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-xl font-semibold text-white" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-xl font-semibold active" href="visit.html">Visit</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-xl font-semibold text-white" href="">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-xl font-semibold text-white" href="#">Animals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-xl font-semibold text-white" href="zooAtHome.html">Zoo at Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-xl font-semibold text-white" href="#">Donate</a>
+                </li>
+            </div>
+        </div>
+        <!--End Mobile Menu -->
+
+
+
+        <!-- Nav -->
+        <!-- <nav-bar class="z-10 absolute bg-white w-full" style="border-bottom-left-radius:50%;
+        border-bottom-right-radius:50%;"></nav-bar> -->
+
+
+        <ul class="nav justify-content-center p-2 absolute z-10 w-full bg-white " style="border-bottom-left-radius:50%;
+                border-bottom-right-radius:50%;">
+            <div>
+
+            </div>
+            <li class="nav-item">
+                <a class="nav-link text-xl font-semibold text-black" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-xl font-semibold active text-black" href="visit.html">Visit</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-xl font-semibold text-black" href="">Events</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-xl font-semibold text-black" href="#">Animals</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-xl font-semibold text-black" href="zooAtHome.html">Zoo at Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-xl font-semibold text-black" href="#">Donate</a>
+            </li>
+        </ul>
+        <!-- End-Nav -->
+        <!-- Banner -->
+        <static-carousel-banner title="Visit Our Animals"
+            body="Nulla vitae elit libero, a pharetra augue mollis interdum."
+            style="background-image: url(/public/resources/visit-banner.jpg)" class="bg-center">
+        </static-carousel-banner>
+        <!-- End Banner -->
+        <!-- Visit -->
+        <div
+            class="containerBox h-auto flex flex-row flex-wrap justify-around content-center lg:w-3/6 lg:mt-28 py-20 float-left bg-green-600 sm:w-full sm:mt-0">
+            <content-box-button-border title="Book a ticket and Visit Us"
+                body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ad!" button="Find Out More"
+                class="w-4/5 h-80 border-2 mx-2 rounded-lg py-5 transform text-white">
+            </content-box-button-border>
+        </div>
+        <div
+            class="containerBox h-auto flex flex-row flex-wrap justify-around content-center lg:w-3/6 lg:mt-28 lg: py-20 float-left bg-blue-600 sm: w-full sm:mt-0">
+            <content-box-button-border title="Bring zoo to your home!"
+                body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ad!" button="Find Out More"
+                class="w-4/5 h-80 border-2 mx-2 rounded-lg py-5 transform text-white">
+            </content-box-button-border>
+        </div>
+        <!-- End Visit -->
+        <!-- Tickets Table -->
+        <div
+            class="containerBox h-auto flex flex-column flex-wrap justify-around content-center w-full lg:mb-28 lg:py-20 float-left sm: py-5">
+            <price-table>
+
+            </price-table>
+            <button type="button" class="btn btn-primary w-40 aling center mt-3">Book</button>
+        </div>
+        <!-- End Tickets Table -->
+        <!-- Things to do At Zoo -->
+        <div class="containerBox mobileParallax h-auto flex flex-row flex-wrap justify-around content-center w-full mb-20 float-left bg-repeat-round bg-fixed "
+            style="background-image: url(/public/resources/what-we-do-background3.jpg);">
+            <content-box-button-border title="What's Here ?" body="Explore things to do at Sharlock Zoo!"
+                button="Find Out More" class="w-4/5 h-80  py-5 text-white">
+            </content-box-button-border>
+        </div>
+
+        <div class="containerBox flex flex-row flex-wrap justify-center w-full mt-20">
+            <image-box-with-title style="background-image: url(/public/resources/zoo-bingo-img.jpg)" title="Zoo Bingo">
+            </image-box-with-title>
+            <image-box-with-title title="Scavenger Hunt"
+                style="background-image: url(/public/resources/zoo-scavenger-hunt.jpg)"></image-box-with-title>
+            <image-box-with-title title="Feed the Animals"
+                style="background-image: url(/public/resources/zoo-feed-animals.jpg); "></image-box-with-title>
+        </div>
+        <div class="containerBox flex flex-row flex-wrap justify-center w-full mt-10">
+            <image-box-with-title style="background-image: url(/public/resources/zoo-bingo-img.jpg)" title="Zoo Bingo">
+            </image-box-with-title>
+            <image-box-with-title title="Scavenger Hunt"
+                style="background-image: url(/public/resources/zoo-scavenger-hunt.jpg)"></image-box-with-title>
+            <image-box-with-title title="Feed the Animals"
+                style="background-image: url(/public/resources/zoo-feed-animals.jpg); "></image-box-with-title>
+        </div>
+        <!-- End Things to do at Zoo -->
+
+        <!-- Footer -->
+        <footer-bottom></footer-bottom>
+        <!-- End Footer -->
+
+
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="/public/scripts.js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
